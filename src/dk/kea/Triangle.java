@@ -1,6 +1,6 @@
 package dk.kea;
 
-public class Triangle {
+public class Triangle implements Shape {
     private double a;
     private double b;
     private double c;
@@ -12,4 +12,13 @@ public class Triangle {
     }
 
     //areal og omkreds
+
+    public double getArea(){
+        double s = (a + b + c) / 2.0;
+        return Math.sqrt(s * (s - a) * (s - b) * (s - c));
+    };
+
+    public double getPerimeter(){
+        return a + b + c;
+    };
 }

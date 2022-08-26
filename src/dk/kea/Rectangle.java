@@ -1,6 +1,6 @@
 package dk.kea;
 
-public class Rectangle {
+public class Rectangle implements Shape{
     private double width;
     private double height;
 
@@ -10,4 +10,11 @@ public class Rectangle {
     }
 
     //areal og omkreds
+    public double getArea(){
+        return width * height;
+    };
+
+    public double getPerimeter(){
+        return 2 * (width + height);
+    };
 }

@@ -1,6 +1,6 @@
 package dk.kea;
 
-public class Circle {
+public class Circle implements Shape {
 
     private double radius;
 
@@ -9,4 +9,11 @@ public class Circle {
     }
 
     //areal og omkreds
+    public double getArea(){
+        return Math.PI * radius * radius;
+    };
+
+    public double getPerimeter(){
+        return 2 * Math.PI * radius;
+    };
 }
